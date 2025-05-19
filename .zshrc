@@ -7,9 +7,7 @@ plugins=(
   zsh-autosuggestions
 )
 
-
 source $ZSH/oh-my-zsh.sh
-export PATH="$PATH:/snap/bin"
 
 # Pulumi
 export PATH=$PATH:/home/$USER/.pulumi/bin
@@ -54,24 +52,12 @@ alias ld="lazydocker"
 alias root='cd $(git rev-parse --show-toplevel)'
 
 # Syntax highlighting ZSH
-if [[ "$(uname)" == "Darwin" ]]; then
-    source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-elif [[ -f /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
-    source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-fi
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-if [[ "$(uname)" == "Darwin" ]]; then
-  # pnpm
-  export PNPM_HOME="$HOME/Library/pnpm"
-  # bitwarden path (app store install)
-  export SSH_AUTH_SOCK=/Users/$USER/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
-else
-  # Linux path
-  export PNPM_HOME="/home/$USER/.local/share/pnpm"
-  # bitwarden path
-  export SSH_AUTH_SOCK=/home/$USER/.bitwarden-ssh-agent.sock
-fi
+# pnpm
+export PNPM_HOME="$HOME/Library/pnpm"
+# bitwarden path (app store install)
+export SSH_AUTH_SOCK=/Users/$USER/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
 
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
