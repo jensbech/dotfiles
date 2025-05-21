@@ -454,7 +454,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.78105825185775757
   },
-  "Non Ascii Font" : "SymbolsNF 12",
+  "Non Ascii Font" : "SymbolsNFM 19",
   "Ansi 6 Color (Dark)" : {
     "Red Component" : 0.16862745583057404,
     "Color Space" : "sRGB",
