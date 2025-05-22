@@ -9,7 +9,7 @@ enable-normalization-opposite-orientation-for-nested-containers = true
 accordion-padding = 0
 
 default-root-container-layout = 'tiles' # | "accordion"
-default-root-container-orientation = 'horizontal' # | "horizontal" | "vertical" | "auto"
+default-root-container-orientation = 'auto' # | "horizontal" | "vertical" | "auto"
 
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
 on-focus-changed = "move-mouse window-lazy-center"
@@ -20,12 +20,12 @@ automatically-unhide-macos-hidden-apps = false
     preset = 'qwerty'
 
 [gaps]
-    inner.horizontal = 0
-    inner.vertical =   0
-    outer.left =       3
-    outer.bottom =     3
-    outer.top =        3
-    outer.right =      3
+    inner.horizontal = 10
+    inner.vertical =   10
+    outer.left =       0
+    outer.bottom =     0
+    outer.top =        0
+    outer.right =      0
 
 [mode.main.binding]
 
@@ -33,12 +33,12 @@ automatically-unhide-macos-hidden-apps = false
     cmd-alt-h = [] # Disable "hide others"
 
     # See: https://nikitabobko.github.io/AeroSpace/commands#layout
-    alt-slash = 'layout tiles horizontal vertical'
-    alt-comma = 'layout accordion horizontal vertical'
+    cmd-period = 'layout tiles horizontal vertical'
+    # cmd-comma = 'layout accordion horizontal vertical'
 
     alt-h = 'focus left'
-    # alt-j = 'focus down'
-    # alt-k = 'focus up'
+    alt-j = 'focus down'
+    alt-k = 'focus up'
     alt-l = 'focus right'
 
     alt-shift-h = 'move left'
