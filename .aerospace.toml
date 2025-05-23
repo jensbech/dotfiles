@@ -1,7 +1,7 @@
+
+start-at-login = true
 after-login-command = []
 after-startup-command = []
-
-start-at-login = false
 
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
@@ -96,6 +96,9 @@ automatically-unhide-macos-hidden-apps = false
     up = 'volume up'
     shift-down = ['volume set 0', 'mode main']
 
+# aerospace list-app
+# aerospace reload-config
+
 [[on-window-detected]]
     if.app-id = "com.microsoft.VSCode"
     run = "move-node-to-workspace Code"
@@ -129,3 +132,9 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
     if.app-id = "com.microsoft.Outlook"
     run = "move-node-to-workspace Mail"
+[[on-window-detected]]
+    if.app-id = "com.microsoft.edgemac.app.eikjhbkpemdappjfcmdeeeamdpkgabmk"
+    run = "move-node-to-workspace Music"
+[[on-window-detected]]
+    if.app-id = "com.microsoft.edgemac.app.cinhimbnkkaeohfgghhklpknlkffjgod"
+    run = "move-node-to-workspace Music"
