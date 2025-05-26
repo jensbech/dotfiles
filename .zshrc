@@ -47,6 +47,7 @@ alias pop="git stash pop"
 alias c="clear"
 alias lg="lazygit"
 alias ld="lazydocker"
+alias dn="dotnet"
 
 # Go to git root
 alias root='cd $(git rev-parse --show-toplevel)'
@@ -87,3 +88,4 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
