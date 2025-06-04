@@ -1,85 +1,54 @@
+# Oh My Zsh configuration
 export ZSH="$HOME/.oh-my-zsh"
-
 ZSH_THEME="afowler"
-
-plugins=(
-  git
-  zsh-autosuggestions
-)
-
+plugins=(git zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
 
+# Path configurations - using macOS style paths
+export PNPM_HOME="$HOME/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+
 # Pulumi
-export PATH=$PATH:/home/$USER/.pulumi/bin
-
-# pnpm
-export PNPM_HOME="/home/$USER/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  
-
-# bun completions
-[ -s "/home/$USER/.bun/_bun" ] && source "/home/$USER/.bun/_bun"
+export PATH=$PATH:$HOME/.pulumi/bin
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+[ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"  # bun completions
 
 # helix
 alias hh="hx"
 export EDITOR=hx
 
 # dotnet
-export PATH="$PATH:/home/$USER/.dotnet/tools"
+export DOTNET_ROOT=/usr/local/share/dotnet
+export PATH="$PATH:$HOME/.dotnet/tools"
 
-# shortcuts
+# bitwarden path (app store install)
+export SSH_AUTH_SOCK=$HOME/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
+
+# Git shortcuts
 alias check="git checkout"
 alias main="git checkout main"
 alias pull="git pull"
 alias stash="git stash"
 alias pop="git stash pop"
+alias root='cd $(git rev-parse --show-toplevel)'
+
+# Other shortcuts
 alias c="clear"
 alias lg="lazygit"
 alias ld="lazydocker"
 alias dn="dotnet"
 
-# Go to git root
-alias root='cd $(git rev-parse --show-toplevel)'
-
-# Syntax highlighting ZSH
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# pnpm
-export PNPM_HOME="$HOME/Library/pnpm"
-# bitwarden path (app store install)
-export SSH_AUTH_SOCK=/Users/$USER/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
-
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-
-# Disable highlights on longer texts, since syntax highlight slows down pasting
+# Performance optimization for syntax highlighting
 export ZSH_HIGHLIGHT_MAXLENGTH=60
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
-# .NET Core SDK
-export DOTNET_ROOT=/usr/local/share/dotnet
+# Load syntax highlighting last for better performance
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# pnpm
-export PNPM_HOME="/Users/jens/Library/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
-
+# Yazi file manager function
 function y() {
 	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
 	yazi "$@" --cwd-file="$tmp"
@@ -89,3 +58,13 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+# If you still need NVM occasionally but don't want it slowing startup,
+# uncomment this function to load NVM only when you need it:
+#
+# nvm() {
+#   unset -f nvm
+#   export NVM_DIR="$HOME/.nvm"
+#   [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
+#   [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
+#   nvm "$@"
+# }
