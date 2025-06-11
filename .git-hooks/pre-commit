@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Get the current branch name
+current_branch=$(git symbolic-ref --short HEAD 2>/dev/null)
+
+# Check if the current branch is main or master
+if [[ "$current_branch" == "main" || "$current_branch" == "master" ]]; then
+    echo "ERROR: Committing directly to $current_branch branch is globally disabled."
+    echo "Please create a feature branch and commit there instead."
+    exit 1
+fi
+
+exit 0
