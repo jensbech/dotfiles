@@ -58,6 +58,8 @@ function y() {
 	rm -f -- "$tmp"
 }
 
+alias gc='git rev-parse --abbrev-ref HEAD | pbcopy'
+
 # If you still need NVM occasionally but don't want it slowing startup,
 # uncomment this function to load NVM only when you need it:
 #
