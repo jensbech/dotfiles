@@ -3,7 +3,7 @@
 while read local_ref local_sha remote_ref remote_sha
 do
     if [[ "$remote_ref" == *"/main" || "$remote_ref" == *"/master" ]]; then
-        echo "ERROR: Pushing to main/master branch is globally disabled on this computer."
+        echo "ERROR: Pushing to main/master branch is globally disabled."
         exit 1
     fi
 done
