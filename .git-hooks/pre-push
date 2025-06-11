@@ -1,4 +1,5 @@
 #!/bin/bash
+
 while read local_ref local_sha remote_ref remote_sha
 do
     if [[ "$remote_ref" == *"/main" || "$remote_ref" == *"/master" ]]; then
@@ -6,4 +7,5 @@ do
         exit 1
     fi
 done
-exit 0q
+
+exit 0
