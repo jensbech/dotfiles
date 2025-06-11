@@ -9,3 +9,4 @@
 	helper = !gh auth git-credential
 [core]
 	autocrlf = false
+	hooksPath = /Users/jens/.git-hooks
