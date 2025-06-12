@@ -1,11 +1,24 @@
 #!/bin/bash
 
-while read local_ref local_sha remote_ref remote_sha
-do
-    if [[ "$remote_ref" == *"/main" || "$remote_ref" == *"/master" ]]; then
-        echo "ERROR: Pushing to main/master branch is globally disabled."
-        exit 1
-    fi
-done
+# Get the repository name from the git directory path
+repo_path=$(git rev-parse --show-toplevel)
+repo_name=$(basename "$repo_path")
+
+# Only apply restrictions if not in dotfiles repo
+if [[ "$repo_name" != "dotfiles" ]]; then
+    while read local_ref local_sha remote_ref remote_sha
+    do
+        if [[ "$remote_ref" == *"/main" || "$remote_ref" == *"/master" ]]; then
+            echo "ERROR: Pushing to main/master branch is globally disabled."
+            exit 1
+        fi
+    done
+else
+    # Read input but don't restrict anything for dotfiles repo
+    while read local_ref local_sha remote_ref remote_sha
+    do
+        : # Do nothing
+    done
+fi
 
 exit 0
