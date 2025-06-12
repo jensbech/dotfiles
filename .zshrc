@@ -30,6 +30,7 @@ export SSH_AUTH_SOCK=$HOME/Library/Containers/com.bitwarden.desktop/Data/.bitwar
 # Git shortcuts
 alias check="git checkout"
 alias main="git checkout main"
+alias stable="git checkout stable"
 alias pull="git pull"
 alias stash="git stash"
 alias pop="git stash pop"
