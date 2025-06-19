@@ -20,8 +20,8 @@ automatically-unhide-macos-hidden-apps = false
     preset = 'qwerty'
 
 [gaps]
-    inner.horizontal = 7
-    inner.vertical =   7
+    inner.horizontal = 5
+    inner.vertical =   5
     outer.left =       0
     outer.bottom =     0
     outer.top =        0
@@ -53,7 +53,7 @@ automatically-unhide-macos-hidden-apps = false
     # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
     ctrl-shift-alt-1 = 'workspace Code'
     ctrl-shift-alt-2 = 'workspace Browser'
-    ctrl-shift-alt-3 = 'workspace Social'
+    ctrl-shift-alt-3 = 'workspace Chat'
     ctrl-shift-alt-4 = 'workspace Terminal'
     ctrl-shift-alt-5 = 'workspace Markdown'
     ctrl-shift-alt-6 = 'workspace Mail'
@@ -65,7 +65,7 @@ automatically-unhide-macos-hidden-apps = false
 
     cmd-ctrl-shift-alt-1 = 'move-node-to-workspace Code'
     cmd-ctrl-shift-alt-2 = 'move-node-to-workspace Browser'
-    cmd-ctrl-shift-alt-3 = 'move-node-to-workspace Social'
+    cmd-ctrl-shift-alt-3 = 'move-node-to-workspace Chat'
     cmd-ctrl-shift-alt-4 = 'move-node-to-workspace Terminal'
     cmd-ctrl-shift-alt-5 = 'move-node-to-workspace Markdown'
     cmd-ctrl-shift-alt-6 = 'move-node-to-workspace Mail'
@@ -110,7 +110,7 @@ automatically-unhide-macos-hidden-apps = false
     run = "move-node-to-workspace Browser"
 [[on-window-detected]]
     if.app-id = "com.microsoft.teams"
-    run = "move-node-to-workspace Social"
+    run = "move-node-to-workspace Chat"
 [[on-window-detected]]
     if.app-id = "com.googlecode.iterm2"
     run = "move-node-to-workspace Terminal"
