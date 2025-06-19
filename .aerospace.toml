@@ -112,6 +112,9 @@ automatically-unhide-macos-hidden-apps = false
     if.app-id = "com.microsoft.teams"
     run = "move-node-to-workspace Chat"
 [[on-window-detected]]
+    if.app-id = "com.microsoft.teams2"
+    run = "move-node-to-workspace Chat"
+[[on-window-detected]]
     if.app-id = "com.googlecode.iterm2"
     run = "move-node-to-workspace Terminal"
 [[on-window-detected]]
