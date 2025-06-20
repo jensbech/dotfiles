@@ -59,7 +59,7 @@ function y() {
 	rm -f -- "$tmp"
 }
 
-alias gc='git rev-parse --abbrev-ref HEAD | pbcopy'
+alias copybranch='git rev-parse --abbrev-ref HEAD | pbcopy'
 alias copy='pbcopy'
 
 # If you still need NVM occasionally but don't want it slowing startup,
