@@ -1,11 +1,9 @@
 #!/bin/bash
 
-# Get the repository name from the git directory path
 repo_path=$(git rev-parse --show-toplevel)
 repo_name=$(basename "$repo_path")
 
-# Only apply restrictions if not in dotfiles repo
-if [[ "$repo_name" != "dotfiles" ]]; then
+if [[ "$repo_name" != "dotfiles" && "$repo_name" != "jensbech-repo" ]]; then
     while read local_ref local_sha remote_ref remote_sha
     do
         if [[ "$remote_ref" == *"/main" || "$remote_ref" == *"/master" ]]; then
@@ -14,10 +12,9 @@ if [[ "$repo_name" != "dotfiles" ]]; then
         fi
     done
 else
-    # Read input but don't restrict anything for dotfiles repo
     while read local_ref local_sha remote_ref remote_sha
     do
-        : # Do nothing
+        :
     done
 fi
 
