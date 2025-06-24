@@ -36,6 +36,10 @@ alias pull="git pull"
 alias stash="git stash"
 alias pop="git stash pop"
 alias root='cd $(git rev-parse --show-toplevel)'
+alias dotfiles='cd $HOME/proj/pers/dotfiles'
+alias vault='cd $HOME/proj/pers/vault'
+alias jb='cd $HOME/proj/elk/jensbech-repo'
+alias elk='cd $HOME/proj/elk'
 
 # Other shortcuts
 alias c="clear"
