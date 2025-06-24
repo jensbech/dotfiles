@@ -7,6 +7,7 @@ source $ZSH/oh-my-zsh.sh
 # Path configurations - using macOS style paths
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
+export PATH="$HOME/Library/Python/3.9/bin:$PATH"
 
 # Pulumi
 export PATH=$PATH:$HOME/.pulumi/bin
