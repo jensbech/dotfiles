@@ -18,5 +18,9 @@
     "titleBar.inactiveBackground": "#66430099",
     "titleBar.inactiveForeground": "#e7e7e799"
   },
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.biome": "explicit",
+    "source.fixAll.biome": "explicit"
+  },
   "peacock.color": "#664300"
 }
