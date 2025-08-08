@@ -2,7 +2,7 @@
 start-at-login = true
 after-login-command = []
 after-startup-command = [
-    'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff494d64 secondary_inactive_color=0xff000000 width=5.0 hidpi=on'
+    'exec-and-forget borders active_color=0xffe1e3e4 inactive_color=0xff000000 secondary_inactive_color=0xff000000 width=5.0 hidpi=on'
 ]
 
 enable-normalization-flatten-containers = true
@@ -22,8 +22,8 @@ automatically-unhide-macos-hidden-apps = false
     preset = 'qwerty'
 
 [gaps]
-    inner.horizontal = 5
-    inner.vertical =   5
+    inner.horizontal = 10
+    inner.vertical =   10
     outer.left =       3
     outer.bottom =     3
     outer.top =        3
