@@ -70,6 +70,8 @@ function y() {
 alias copybranch='git rev-parse --abbrev-ref HEAD | pbcopy'
 alias copy='pbcopy'
 
+alias brew-apply="brew bundle --file=/Users/$USER/proj/pers/dotfiles/Brewfile --cleanup"
+
 # If you still need NVM occasionally but don't want it slowing startup,
 # uncomment this function to load NVM only when you need it:
 #
