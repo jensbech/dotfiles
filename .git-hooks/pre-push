@@ -1,0 +1,21 @@
+#!/bin/bash
+
+repo_path=$(git rev-parse --show-toplevel)
+repo_name=$(basename "$repo_path")
+
+# if [[ "$repo_name" != "dotfiles" && "$repo_name" != "jensbech-repo" ]]; then
+#     while read local_ref local_sha remote_ref remote_sha
+#     do
+#         if [[ "$remote_ref" == *"/main" || "$remote_ref" == *"/master" ]]; then
+#             echo "ERROR: Pushing to main/master branch is globally disabled."
+#             exit 1
+#         fi
+#     done
+# else
+#     while read local_ref local_sha remote_ref remote_sha
+#     do
+#         :
+#     done
+# fi
+
+exit 0

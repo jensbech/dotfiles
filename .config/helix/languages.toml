@@ -1,0 +1,19 @@
+[language-server.omnisharp]
+command = "/Users/jens/omnisharp-roslyn/OmniSharp"
+args = [ "-lsp" ]
+timeout = 10000
+
+[language-server.csharp]
+command = "csharp-language-server"
+
+
+# [language-server.dotrush]
+# command = "/Users/jens/dotRush/DotRush"l
+# timeout = 10000
+
+[[language]]
+name = "c-sharp"
+scope = "source.csharp"
+file-types = ["cs"]
+roots = ["sln", "csproj"]
+language-servers = ["omnisharp"]
