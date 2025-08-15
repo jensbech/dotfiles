@@ -6,14 +6,23 @@ timeout = 10000
 [language-server.csharp]
 command = "csharp-language-server"
 
-
-# [language-server.dotrush]
-# command = "/Users/jens/dotRush/DotRush"l
-# timeout = 10000
-
 [[language]]
 name = "c-sharp"
 scope = "source.csharp"
 file-types = ["cs"]
 roots = ["sln", "csproj"]
 language-servers = ["omnisharp"]
+
+[language-server]
+biome = { command = "biome", args = ["lsp-proxy"] }
+
+[[language]]
+name = "typescript"
+auto-format = true
+language-servers = [
+  { name = "typescript-language-server", except-features = [
+    "format",
+  ] },
+  "biome",
+]
+formatter = { command = "biome", args = ["format", "--stdin-file-path", "test.ts"] }

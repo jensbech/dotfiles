@@ -4,6 +4,8 @@ theme = "dark_plusplus"
 end-of-line-diagnostics = "hint" 
 bufferline = "always"
 color-modes = true
+cursorline = true
+true-color = true
 
 [editor.inline-diagnostics]
 cursor-line = "error" 
@@ -12,3 +14,15 @@ cursor-line = "error"
 normal = "block"
 insert = "bar"
 select = "underline"
+
+[keys.normal]
+esc = ["collapse_selection", "keep_primary_selection"]
+C-t = ":buffer-next"
+C-d = ":buffer-previous"
+C-f = ":bclose"
+C-s = ":w"
+
+[editor.indent-guides]
+render = true
+character = "¦"
+skip-levels = 0
