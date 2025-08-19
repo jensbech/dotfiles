@@ -31,12 +31,12 @@ alias vault='cd $HOME/proj/pers/vault'
 alias jb='cd $HOME/proj/elk/jensbech-repo'
 alias elk='cd $HOME/proj/elk'
 alias cpdirname='basename "$PWD" | pbcopy'
+alias cpbranchname='git rev-parse --abbrev-ref HEAD | pbcopy'
 alias kb='kubectl'
 alias c="clear"
 alias lg="lazygit"
 alias ld="lazydocker"
 alias dn="dotnet"
-alias copybranch='git rev-parse --abbrev-ref HEAD | pbcopy'
 alias copy='pbcopy'
 alias brew-apply="brew bundle --file=/Users/$USER/proj/pers/dotfiles/Brewfile --cleanup"
 
