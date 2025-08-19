@@ -1,5 +1,6 @@
 tap "nikitabobko/tap"
 
+brew "kubelogin"
 brew "abseil"
 brew "k9s"
 brew "kubelogin"
