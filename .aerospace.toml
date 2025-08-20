@@ -108,9 +108,6 @@ automatically-unhide-macos-hidden-apps = false
 
 # Browser
 [[on-window-detected]]
-    if.app-id = "com.brave.Browser"
-    run = "move-node-to-workspace Browser"
-[[on-window-detected]]
     if.app-id = "com.apple.Safari"
     run = "move-node-to-workspace Browser"
 [[on-window-detected]]
@@ -174,3 +171,9 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
     if.app-id = "md.obsidian"
     run = "move-node-to-workspace Markdown"
+
+# brave
+[[on-window-detected]]
+  if.app-id = "com.brave.Browser" 
+  run = "move-node-to-workspace 7"
+  
