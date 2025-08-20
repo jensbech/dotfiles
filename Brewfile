@@ -185,7 +185,6 @@ cask "slack"
 cask "toinane-colorpicker"
 cask "visual-studio-code"
 cask "google-chrome"
-
 vscode "42crunch.vscode-openapi"
 vscode "alefragnani.project-manager"
 vscode "biomejs.biome"
