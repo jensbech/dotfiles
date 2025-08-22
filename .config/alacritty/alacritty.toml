@@ -187,10 +187,8 @@ key = "N"
 mods = "Command"
 action = "SpawnNewInstance"
 
-[[keyboard.bindings]]
-key = "Return"
-mods = "Command"
-action = "ToggleFullscreen"
+## Removed Command+Return fullscreen toggle
+## (was: action = "ToggleFullscreen")
 
 # Increase font size
 [[keyboard.bindings]]
