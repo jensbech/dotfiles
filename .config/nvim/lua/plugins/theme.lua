@@ -11,13 +11,13 @@ return {
         italic_comments = false,
         disable_nvimtree_bg = true,
         group_overrides = {
-          Normal = { bg = "#06080a" },
-          NormalFloat = { bg = "#06080a" },
-          SignColumn = { bg = "#06080a" },
-          CursorLine = { bg = "#0a0d10" },
-          CursorLineNr = { bg = "#0a0d10" },
-          LineNr = { bg = "#06080a" },
-          WinSeparator = { fg = "#2a2a2a", bg = "#06080a" },
+          Normal = { bg = "none" },
+          NormalFloat = { bg = "none" },
+          SignColumn = { bg = "none" },
+          CursorLine = { bg = "none" },
+          CursorLineNr = { bg = "none" },
+          LineNr = { bg = "none" },
+          WinSeparator = { fg = "#2a2a2a", bg = "none" },
         },
       })
       require("vscode").load()
