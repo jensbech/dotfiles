@@ -2,7 +2,24 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="afowler"
 plugins=(git zsh-autosuggestions)
 source $ZSH/oh-my-zsh.sh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Homebrew (macOS & Linux)
+if [[ "$(uname -s)" == "Darwin" ]]; then
+	HOMEBREW_PREFIX="/opt/homebrew"
+else
+	HOMEBREW_PREFIX="/home/linuxbrew/.linuxbrew"
+fi
+
+if command -v brew >/dev/null 2>&1; then
+	eval "$(brew shellenv)" 2>/dev/null
+elif [ -d "$HOMEBREW_PREFIX" ]; then
+	export PATH="$HOMEBREW_PREFIX/bin:$HOMEBREW_PREFIX/sbin:$PATH"
+	export MANPATH="$HOMEBREW_PREFIX/share/man:${MANPATH:-}"
+	export INFOPATH="$HOMEBREW_PREFIX/share/info:${INFOPATH:-}"
+fi
+
+if [ -f "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" ]; then
+	source "$HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+fi
 
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
