@@ -12,7 +12,7 @@ dynamic_padding = false
 decorations = "full"
 
 # Background opacity
-opacity = 0
+opacity = 1
 
 # Window title
 title = "Alacritty"
