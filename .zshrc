@@ -57,8 +57,17 @@ alias lg="lazygit"
 alias ld="lazydocker"
 alias dn="dotnet"
 alias copy='pbcopy'
-alias ls="eza"
-alias ll="eza -l"
+
+alias ld='eza -lD'
+alias lf='eza -lF --color=always | grep -v /'
+alias lh='eza -dl .* --group-directories-first'
+alias ll='eza -al --group-directories-first'
+alias ls='eza -alF --color=always --sort=size | grep -v /'
+alias lt='eza --tree'
+
+
+# alias ls="eza"
+# alias ll="eza -l"
 
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
