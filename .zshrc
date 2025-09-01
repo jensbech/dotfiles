@@ -57,6 +57,8 @@ alias lg="lazygit"
 alias ld="lazydocker"
 alias dn="dotnet"
 alias copy='pbcopy'
+alias ls="eza"
+alias ll="eza -l"
 
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
