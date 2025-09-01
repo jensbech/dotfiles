@@ -65,6 +65,8 @@ alias ll='eza -al --group-directories-first'
 alias ls='eza -alF --color=always --sort=size | grep -v /'
 alias lt='eza --tree'
 
+alias curl="curlie"
+
 
 # alias ls="eza"
 # alias ll="eza -l"
