@@ -58,18 +58,23 @@ alias ld="lazydocker"
 alias dn="dotnet"
 alias copy='pbcopy'
 
-#alias ld='eza -lD'
-#alias lf='eza -lF --color=always | grep -v /'
-#alias lh='eza -dl .* --group-directories-first'
-#alias ll='eza -al --group-directories-first'
-#alias ls='eza -alF --color=always --sort=size | grep -v /'
-#alias lt='eza --tree'
+# List directories only (long format)
+alias ld='eza -lD --group-directories-first --color=always --icons'
+# List files only (long format)
+alias lf='eza -lF --color=always --group-directories-first --icons | grep -v "/$"'
+# List dotfiles only (long format)
+alias lh='eza -ld .* --group-directories-first --color=always --icons'
+# List all files and directories (long format)
+alias ll='eza -al --group-directories-first --color=always --icons'
+# List all files only, sorted by size (long format)
+alias ls='eza -alF --color=always --group-directories-first --icons --sort=size | grep -v "/$"'
+# Tree view of current directory
+alias lt='eza --tree --color=always --icons'
+# Show tree view one level deep
+alias lt1='eza --tree --level=1 --color=always --icons'
+
 
 alias curl="curlie"
-
-
-# alias ls="eza"
-# alias ll="eza -l"
 
 zstyle ':bracketed-paste-magic' active-widgets '.self-*'
 
