@@ -5,7 +5,6 @@
   // Make
   "makefile.configureOnOpen": true,
   "git.confirmSync": false,
-  // Copilot
   "github.copilot.enable": {
     "*": false,
     "plaintext": false,
