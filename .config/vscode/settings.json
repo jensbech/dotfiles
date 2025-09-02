@@ -1,0 +1,82 @@
+{
+  "redhat.telemetry.enabled": false,
+  // Editor
+  "editor.fontFamily": "JetBrains Mono",
+  // Make
+  "makefile.configureOnOpen": true,
+  "git.confirmSync": false,
+  // Copilot
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false,
+    "yaml": true,
+    "shellscript": false
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.minimap.enabled": false,
+  "editor.wordWrap": "on",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "workbench.startupEditor": "none",
+  "explorer.confirmDragAndDrop": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "explorer.confirmDelete": false,
+  "remote.autoForwardPortsSource": "hybrid",
+  "dotnetAcquisitionExtension.existingDotnetPath": [],
+  "git.enableSmartCommit": true,
+  "window.systemColorTheme": "dark",
+  "git.autofetch": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "chat.agent.maxRequests": 30,
+  "terminal.integrated.env.osx": {
+    "PATH": "${env:PATH}:/usr/local/share/dotnet"
+  },
+  "editor.fontLigatures": true,
+  "window.openFoldersInNewWindow": "off",
+  "projectManager.git.baseFolders": [
+    "/Users/jens/proj/elk"
+  ],
+  "workbench.panel.defaultLocation": "right",
+  "editor.mouseWheelZoom": true,
+  "window.zoomLevel": 0,
+  "editor.tokenColorCustomizations": {
+    "[ComfyDark]": {}
+  },
+  "terminal.external.windowsExec": "",
+  "terminal.integrated.mouseWheelZoom": true,
+  "csharp.debug.console": "externalTerminal",
+  "terminal.integrated.defaultProfile.osx": "zsh",
+  "terminal.external.osxExec": "iTerm.app",
+  "terminal.explorerKind": "external",
+  "yaml.schemas": {
+    "file:///Users/jens/.vscode/extensions/atlassian.atlascode-3.8.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+  },
+  "containers.containerCommand": "docker",
+  "editor.formatOnSave": true,
+  "terminal.integrated.fontSize": 13,
+  "workbench.preferredLightColorTheme": "Default Dark Modern",
+  "docker.extension.enableComposeLanguageServer": false,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "task.problemMatchers.neverPrompt": true,
+  "workbench.colorCustomizations": {
+    "editorCursor.foreground": "#ffffff",
+    "editorCursor.background": "#010101",
+  },
+  "window.titleBarStyle": "custom",
+  "workbench.preferredDarkColorTheme": "Default Dark+",
+  "accessibility.dimUnfocused.enabled": true,
+  "accessibility.dimUnfocused.opacity": 1,
+  "editor.stickyScroll.enabled": false,
+  "editor.cursorBlinking": "smooth",
+  "biome.suggestInstallingGlobally": false,
+  "workbench.colorTheme": "ComfyDark",
+  "[csharp]": {
+    "editor.formatOnSave": false
+  },
+  "dotnet.codeLens.enableReferencesCodeLens": false,
+  "extensions.ignoreRecommendations": true,
+}

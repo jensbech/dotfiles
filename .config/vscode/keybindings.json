@@ -1,0 +1,290 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd+[Period]",
+        "command": "editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+    },
+    {
+        "key": "cmd+i",
+        "command": "-editor.action.triggerSuggest",
+        "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+    },
+    {
+        "key": "cmd+[Quote]",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+[Period]",
+        "command": "-editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "f2",
+        "command": "renameFile",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "enter",
+        "command": "-renameFile",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+    },
+    {
+        "key": "cmd+[Semicolon]",
+        "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "shift+cmd+7",
+        "command": "-editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "d",
+        "command": "dance.edit.yank-delete",
+        "when": "editorTextFocus && dance.mode == 'normal'"
+    },
+    {
+        "key": "d",
+        "command": "-dance.edit.yank-delete",
+        "when": "editorTextFocus && dance.mode == 'normal'"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "-workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+9",
+        "command": "-workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+8",
+        "command": "-workbench.action.previousEditor"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+k cmd+i",
+        "command": "-workbench.action.showHover",
+        "when": "!editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+k cmd+i",
+        "command": "-editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+a",
+        "command": "-notification.acceptPrimaryAction",
+        "when": "notificationFocus || notificationToastsVisible"
+    },
+    {
+        "key": "shift+cmd+a",
+        "command": "editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+left",
+        "command": "-editor.action.smartSelect.shrink",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+t",
+        "command": "-workbench.action.reopenClosedEditor"
+    },
+    {
+        "key": "shift+cmd+t",
+        "command": "editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+shift+right",
+        "command": "-editor.action.smartSelect.expand",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+b",
+        "command": "-workbench.action.tasks.build",
+        "when": "taskCommandsRegistered"
+    },
+    {
+        "key": "shift+cmd+b",
+        "command": "bracketeer.changeQuotesTo"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+right",
+        "command": "workbench.action.navigateForward",
+        "when": "canNavigateForward"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+left",
+        "command": "workbench.action.navigateBack",
+        "when": "canNavigateBack"
+    },
+    {
+        "key": "shift+cmd+s",
+        "command": "-workbench.action.files.saveAs"
+    },
+    {
+        "key": "shift+cmd+s",
+        "command": "-workbench.action.files.saveLocalFile",
+        "when": "remoteFileDialogVisible"
+    },
+    {
+        "key": "shift+cmd+s",
+        "command": "workbench.action.files.saveFiles"
+    },
+    {
+        "key": "shift+cmd+h",
+        "command": "-workbench.action.replaceInFiles"
+    },
+    {
+        "key": "ctrl+cmd+j",
+        "command": "workbench.action.createTerminalEditor"
+    },
+    {
+        "key": "alt+cmd+x",
+        "command": "workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "alt+cmd+b",
+        "command": "-workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "down",
+        "command": "dance.run",
+        "when": "editorTextFocus && dance.mode == 'normal' && !editorHasSelection && !editorHasMultipleSelections",
+        "args": {
+            "code": [
+                "if (repetitions > 1) {",
+                "  await vscode.commands.executeCommand('dance.select.down.jump', { count: repetitions })",
+                "} else {",
+                "  vscode.commands.executeCommand('cursorDown')",
+                "}"
+            ]
+        }
+    },
+    {
+        "key": "up",
+        "command": "dance.run",
+        "when": "editorTextFocus && dance.mode == 'normal' && !editorHasSelection && !editorHasMultipleSelections",
+        "args": {
+            "code": [
+                "if (repetitions > 1) {",
+                "  await vscode.commands.executeCommand('dance.select.up.jump', { count: repetitions })",
+                "} else {",
+                "  vscode.commands.executeCommand('cursorUp')",
+                "}"
+            ]
+        }
+    },
+    {
+        "key": "alt+cmd+[BracketRight]",
+        "command": "editor.toggleFold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "cmd+k cmd+l",
+        "command": "-editor.toggleFold",
+        "when": "editorTextFocus && foldingEnabled"
+    },
+    {
+        "key": "ctrl+x",
+        "command": "workbench.panel.chat.view.copilot.focus"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+t",
+        "command": "workbench.action.splitEditorRight"
+    },
+    {
+        "key": "cmd+k ctrl+shift+alt+cmd+7",
+        "command": "-workbench.action.splitEditorRight"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+r",
+        "command": "workbench.action.terminal.resizePaneLeft",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+cmd+left",
+        "command": "-workbench.action.terminal.resizePaneLeft",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+s",
+        "command": "workbench.action.terminal.resizePaneRight",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+cmd+right",
+        "command": "-workbench.action.terminal.resizePaneRight",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+n",
+        "command": "workbench.action.navigateEditorGroups"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+w",
+        "command": "workbench.action.toggleEditorWidths"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+c",
+        "command": "workbench.action.focusActiveEditorGroup"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+b",
+        "command": "github.copilot.completions.toggle"
+    },
+    {
+        "key": "ctrl+shift+alt+cmd+m",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "shift+cmd+h",
+        "command": "go-to-next-error.next.error"
+    },
+    {
+        "key": "s",
+        "command": "-dance.selections.select.orLeap",
+        "when": "editorTextFocus && dance.mode == 'normal'"
+    },
+    {
+        "key": "s",
+        "command": "dance.modes.set.select",
+        "when": "editorTextFocus && dance.mode == 'normal'"
+    }
+]
