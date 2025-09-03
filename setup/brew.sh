@@ -13,6 +13,7 @@ brew install "${cli_apps[@]}"
 
 # gui
 gui_apps=(
+  brave-browser
   bitwarden
   protonvpn
   alacritty

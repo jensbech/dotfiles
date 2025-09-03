@@ -66,6 +66,7 @@ alias lf='eza -lF --color=always --group-directories-first --icons | grep -v "/$
 alias lh='eza -ld .* --group-directories-first --color=always --icons'
 # List all files and directories (long format)
 alias ll='eza -al --group-directories-first --color=always --icons'
+alias l='eza -al --group-directories-first --color=always --icons'
 # List all files only, sorted by size (long format)
 alias ls='eza -alF --color=always --group-directories-first --icons --sort=size | grep -v "/$"'
 # Tree view of current directory
