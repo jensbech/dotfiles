@@ -34,7 +34,7 @@ export PATH="$PATH:$HOME/.dotnet/tools"
 export SSH_AUTH_SOCK=$HOME/Library/Containers/com.bitwarden.desktop/Data/.bitwarden-ssh-agent.sock
 export ZSH_HIGHLIGHT_MAXLENGTH=60
 
-alias hh="hx"
+alias h="hx"
 alias nv="nvim"
 alias check="git checkout"
 alias main="git checkout main"

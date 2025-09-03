@@ -22,6 +22,7 @@ gui_apps=(
   discord
   nikitabobko/tap/aerospace
   signal
+  bettertouchtool
 )
 
 brew install --cask "${gui_apps[@]}"
