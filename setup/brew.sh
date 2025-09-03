@@ -7,6 +7,7 @@ cli_apps=(
   helix
   eza
   yazi
+  just
 )
 
 brew install "${cli_apps[@]}"
