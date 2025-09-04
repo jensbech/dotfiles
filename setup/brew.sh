@@ -7,12 +7,14 @@ cli_apps=(
   helix
   eza
   yazi
+  just
 )
 
 brew install "${cli_apps[@]}"
 
 # gui
 gui_apps=(
+  brave-browser
   bitwarden
   protonvpn
   alacritty

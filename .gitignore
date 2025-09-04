@@ -1,2 +1,4 @@
 *known_hosts*
 .vscode
+.DS_Store
+.ssh/config
