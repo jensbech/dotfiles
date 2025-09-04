@@ -91,7 +91,7 @@
     },
     "insert": {
       "decorations": {
-        "backgroundColor": "#012915",
+        "backgroundColor": "#024a26",
         "isWholeLine": true
       },
       "onLeaveMode": [
