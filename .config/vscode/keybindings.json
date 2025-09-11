@@ -286,5 +286,5 @@
         "key": "s",
         "command": "dance.modes.set.select",
         "when": "editorTextFocus && dance.mode == 'normal'"
-    }
+    },
 ]

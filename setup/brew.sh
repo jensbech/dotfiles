@@ -8,6 +8,7 @@ cli_apps=(
   eza
   yazi
   just
+  typescript
 )
 
 brew install "${cli_apps[@]}"
