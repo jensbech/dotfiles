@@ -26,6 +26,9 @@ gui_apps=(
   nikitabobko/tap/aerospace
   signal
   bettertouchtool
+  logi-options+
+  logitech-g-hub
+  mos
 )
 
 brew install --cask "${gui_apps[@]}"
