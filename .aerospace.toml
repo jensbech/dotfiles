@@ -48,7 +48,7 @@ automatically-unhide-macos-hidden-apps = false
     alt-equal = 'resize smart +200'
 
     ctrl-shift-alt-1 = 'workspace Code'
-    ctrl-shift-alt-2 = 'workspace Safari/Edge'
+    ctrl-shift-alt-2 = 'workspace Browser'
     ctrl-shift-alt-3 = 'workspace Chat'
     ctrl-shift-alt-4 = 'workspace Terminal'
     ctrl-shift-alt-5 = 'workspace Markdown'
@@ -59,7 +59,7 @@ automatically-unhide-macos-hidden-apps = false
     ctrl-shift-alt-0 = 'workspace 0'
 
     cmd-ctrl-shift-alt-1 = 'move-node-to-workspace Code'
-    cmd-ctrl-shift-alt-2 = 'move-node-to-workspace Safari/Edge'
+    cmd-ctrl-shift-alt-2 = 'move-node-to-workspace Browser'
     cmd-ctrl-shift-alt-3 = 'move-node-to-workspace Chat'
     cmd-ctrl-shift-alt-4 = 'move-node-to-workspace Terminal'
     cmd-ctrl-shift-alt-5 = 'move-node-to-workspace Markdown'
@@ -99,13 +99,16 @@ automatically-unhide-macos-hidden-apps = false
     if.app-id = "com.microsoft.VSCode"
     run = "move-node-to-workspace Code"
 
-# Safari/Edge
+ # Browser
 [[on-window-detected]]
     if.app-id = "com.apple.Safari"
-    run = "move-node-to-workspace Safari/Edge"
+    run = "move-node-to-workspace Browser"
 [[on-window-detected]]
     if.app-id = "com.microsoft.edgemac"
-    run = "move-node-to-workspace Safari/Edge"
+    run = "move-node-to-workspace Browser"
+[[on-window-detected]]
+    if.app-id = "com.google.Chrome"
+    run = "move-node-to-workspace Browser"
 
 # Chat
 [[on-window-detected]]

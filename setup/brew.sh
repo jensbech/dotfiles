@@ -19,7 +19,7 @@ gui_apps=(
   bitwarden
   protonvpn
   alacritty
-  visual-studio-code
+  # visual-studio-code
   spotify
   raycast
   discord
@@ -27,7 +27,6 @@ gui_apps=(
   signal
   bettertouchtool
   logi-options+
-  logitech-g-hub
   mos
 )
 
