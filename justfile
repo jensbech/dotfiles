@@ -2,11 +2,17 @@ _default:
     @just --list
 
 stow:
-    stow -v -t ~ .
+    stow -v -t ~ . --ignore='vscode'
+    stow -v -t "$HOME/Library/Application Support/Code/User" vscode
 
 restow:
-    stow -v -D -t ~ .
-    just stow
+    stow -v -D -t ~ . --ignore='vscode'
+    stow -v -t ~ . --ignore='vscode'
+    just stow-vscode
+
+stow-vscode:
+    stow -v -D -t "$HOME/Library/Application Support/Code/User" vscode
+    stow -v -t "$HOME/Library/Application Support/Code/User" vscode
 
 brew:
     setup/brew.sh
