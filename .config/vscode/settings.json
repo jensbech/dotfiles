@@ -52,7 +52,6 @@
     "file:///Users/jens/.vscode/extensions/atlassian.atlascode-3.8.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
   },
   "editor.formatOnSave": true,
-  "terminal.integrated.fontSize": 13,
   "workbench.preferredLightColorTheme": "Default Dark Modern",
   "docker.extension.enableComposeLanguageServer": false,
   "github.copilot.nextEditSuggestions.enabled": true,
@@ -153,5 +152,7 @@
       ]
     }
   },
-  "editor.fontSize": 14
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 11,
+  "dotnet.codeLens.enableReferencesCodeLens": false
 }

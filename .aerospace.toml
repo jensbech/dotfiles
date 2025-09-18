@@ -156,7 +156,7 @@ automatically-unhide-macos-hidden-apps = false
 
 # Music
 [[on-window-detected]]
-    if.app-id = "com.microsoft.edgemac.app.eikjhbkpemdappjfcmdeeeamdpkgabmk"
+    if.app-id = "com.brave.Browser.app.cinhimbnkkaeohfgghhklpknlkffjgod"
     run = "move-node-to-workspace Music"
 [[on-window-detected]]
     if.app-id = "com.microsoft.edgemac.app.cinhimbnkkaeohfgghhklpknlkffjgod"
