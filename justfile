@@ -1,18 +1,23 @@
 _default:
     @just --list
 
+vscode_path := "$HOME/Library/Application Support/Code/User"
+
 stow:
     stow -v -t ~ . --ignore='vscode'
-    stow -v -t "$HOME/Library/Application Support/Code/User" vscode
+    stow -v -t "{{vscode_path}}" vscode
+
+unstow:
+    stow -v -D -t ~ . --ignore='vscode'
+    stow -v -D -t "{{vscode_path}}" vscode
 
 restow:
-    stow -v -D -t ~ . --ignore='vscode'
-    stow -v -t ~ . --ignore='vscode'
-    just stow-vscode
+    just unstow
+    just stow
 
 stow-vscode:
-    stow -v -D -t "$HOME/Library/Application Support/Code/User" vscode
-    stow -v -t "$HOME/Library/Application Support/Code/User" vscode
+    stow -v -D -t "{{vscode_path}}" vscode
+    stow -v -t "{{vscode_path}}" vscode
 
 brew:
     setup/brew.sh
