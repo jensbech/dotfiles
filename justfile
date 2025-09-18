@@ -3,11 +3,6 @@ _default:
 
 vscode_path := "$HOME/Library/Application Support/Code/User"
 
-install-justfile:
-    mkdir -p ~/.config/just
-    cp justfile ~/.config/just/justfile
-    @echo "Global justfile installed! You can now run 'just' from anywhere."
-
 stow:
     stow -v -t ~ . --ignore='vscode'
     stow -v -t "{{vscode_path}}" vscode
