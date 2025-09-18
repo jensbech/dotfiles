@@ -1,18 +1,21 @@
-default:
+_default:
     @just --list
 
-# Stow dotfiles
 stow:
-    @echo "Stowing dotfiles to home directory..."
     stow -v -t ~ .
 
-# Install Homebrew packages
+restow:
+    stow -v -D -t ~ .
+    stow -v -t ~ .
+
 brew:
     bash setup/brew.sh
 
-# Pull latest changes and restow
-sync:
-    @echo "Pulling latest changes..."
+pull:
     git pull
-    @echo "Re-stowing dotfiles..."
-    just restow
+    just stow
+
+push:
+    git add .
+    git commit -m "update"
+    git push
