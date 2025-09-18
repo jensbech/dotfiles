@@ -6,10 +6,10 @@ stow:
 
 restow:
     stow -v -D -t ~ .
-    stow -v -t ~ .
+    just stow
 
 brew:
-    bash setup/brew.sh
+    setup/brew.sh
 
 pull:
     git pull
