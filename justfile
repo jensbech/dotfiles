@@ -12,8 +12,7 @@ unstow:
     stow -v -D -t "{{vscode_path}}" vscode
 
 restow:
-    just unstow
-    just stow
+    just unstow stow
 
 stow-vscode:
     stow -v -D -t "{{vscode_path}}" vscode
