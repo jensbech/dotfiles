@@ -9,6 +9,7 @@ cli_apps=(
   yazi
   just
   typescript
+  bat
 )
 
 brew install "${cli_apps[@]}"
