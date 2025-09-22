@@ -156,5 +156,18 @@
   "terminal.integrated.fontSize": 10,
   "dotnet.codeLens.enableReferencesCodeLens": false,
   "indentRainbow.indicatorStyle": "light",
-  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true,
+  "editor.guides.bracketPairs": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+  "workbench.activityBar.location": "hidden",
+  "workbench.editor.showTabs": "none",
+  "[csharp]": {
+    "editor.defaultFormatter": "nromanov.dotrush"
+  },
+  "workbench.navigationControl.enabled": false,
+  "chat.commandCenter.enabled": false,
+  "window.commandCenter": false,
+  "workbench.editor.editorActionsLocation": "hidden",
+  "workbench.layoutControl.enabled": false,
+  "editor.matchBrackets": false
 }

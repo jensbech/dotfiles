@@ -12,6 +12,29 @@ return {
     end,
   },
 
+  -- LSP server manager & installer
+  {
+    "williamboman/mason.nvim",
+    build = ":MasonUpdate",
+    cmd = { "Mason", "MasonUpdate" },
+    opts = {
+      ui = {
+        border = "rounded",
+      },
+    },
+  },
+  {
+    "williamboman/mason-lspconfig.nvim",
+    dependencies = { "williamboman/mason.nvim" },
+    opts = {
+      ensure_installed = {
+        "tsserver", -- JavaScript/TypeScript
+        "omnisharp", -- C#
+      },
+      automatic_installation = true,
+    },
+  },
+
   -- Treesitter for accurate syntax groups
   {
     "nvim-treesitter/nvim-treesitter",
