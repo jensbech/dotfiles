@@ -159,7 +159,6 @@
   "extensions.ignoreRecommendations": true,
   "editor.guides.bracketPairs": true,
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
-  "workbench.activityBar.location": "hidden",
   "workbench.editor.showTabs": "none",
   "[csharp]": {
     "editor.defaultFormatter": "nromanov.dotrush"
@@ -169,5 +168,6 @@
   "window.commandCenter": false,
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.layoutControl.enabled": false,
-  "editor.matchBrackets": false
+  "editor.matchBrackets": false,
+  "workbench.activityBar.location": "hidden"
 }
