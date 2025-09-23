@@ -21,6 +21,9 @@ stow-vscode:
 brew:
     setup/brew.sh
 
+brupdate:
+    brew update && brew upgrade
+
 pull:
     git pull
     just stow

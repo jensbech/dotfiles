@@ -1,7 +1,5 @@
 start-at-login = true
 after-login-command = []
-after-startup-command = []
-
 enable-normalization-flatten-containers = true
 enable-normalization-opposite-orientation-for-nested-containers = true
 

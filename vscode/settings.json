@@ -168,6 +168,6 @@
   "window.commandCenter": false,
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.layoutControl.enabled": false,
-  "editor.matchBrackets": "never",
+  "editor.matchBrackets": false,
   "workbench.activityBar.location": "hidden"
 }

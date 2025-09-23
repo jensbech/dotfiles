@@ -10,6 +10,7 @@ cli_apps=(
   just
   typescript
   bat
+  borders
 )
 
 brew install "${cli_apps[@]}"
@@ -30,6 +31,6 @@ gui_apps=(
   logi-options+
   mos
 )
-
+brew tap FelixKratz/formulae
 brew install --cask "${gui_apps[@]}"
 
