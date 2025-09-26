@@ -153,7 +153,7 @@
     }
   },
   "editor.fontSize": 14,
-  "terminal.integrated.fontSize": 10,
+  "terminal.integrated.fontSize": 9,
   "dotnet.codeLens.enableReferencesCodeLens": false,
   "indentRainbow.indicatorStyle": "light",
   "extensions.ignoreRecommendations": true,
@@ -169,10 +169,27 @@
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.layoutControl.enabled": false,
   "editor.matchBrackets": "never",
-  "workbench.activityBar.location": "hidden",
   "cSpell.userWords": [
     "BCDEV",
+    "elkds",
+    "feide",
+    "ITDS",
     "multideploy",
-    "Pulumi"
-  ]
+    "Pulumi",
+    "servicebus",
+    "VNET"
+  ],
+  "chat.tools.terminal.autoApprove": {
+    "swift": true
+  },
+  "workbench.statusBar.visible": false,
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
 }

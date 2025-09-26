@@ -287,4 +287,9 @@
         "command": "dance.modes.set.select",
         "when": "editorTextFocus && dance.mode == 'normal'"
     },
+    {
+        "key": "ctrl+shift+cmd",
+        "command": "editor.action.replaceAll",
+        "when": "editorFocus && findWidgetVisible"
+    }
 ]
