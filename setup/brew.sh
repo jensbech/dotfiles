@@ -22,6 +22,7 @@ gui_apps=(
   protonvpn
   alacritty
   # visual-studio-code
+  vscodium
   spotify
   raycast
   discord
