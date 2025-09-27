@@ -31,6 +31,7 @@ gui_apps=(
   bettertouchtool
   logi-options+
   mos
+  pnpm
 )
 brew tap FelixKratz/formulae
 brew install --cask "${gui_apps[@]}"

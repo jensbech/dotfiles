@@ -49,7 +49,9 @@
   "terminal.external.osxExec": "iTerm.app",
   "terminal.explorerKind": "external",
   "yaml.schemas": {
-    "file:///Users/jens/.vscode/extensions/atlassian.atlascode-3.8.2/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    "file:///Users/jens/.vscode-oss/extensions/continue.continue-1.2.6-darwin-arm64/config-yaml-schema.json": [
+      ".continue/**/*.yaml"
+    ]
   },
   "editor.formatOnSave": true,
   "workbench.preferredLightColorTheme": "Default Dark Modern",
@@ -161,7 +163,7 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "workbench.editor.showTabs": "none",
   "[csharp]": {
-    "editor.defaultFormatter": "nromanov.dotrush"
+    "editor.defaultFormatter": "csharpier.csharpier-vscode"
   },
   "workbench.navigationControl.enabled": false,
   "chat.commandCenter.enabled": false,
@@ -170,12 +172,16 @@
   "workbench.layoutControl.enabled": false,
   "editor.matchBrackets": "never",
   "cSpell.userWords": [
+    "aspnet",
     "BCDEV",
+    "buildx",
     "elkds",
     "elkjop",
     "elkjopnordic",
     "feide",
     "ITDS",
+    "jensbech",
+    "justfile",
     "multideploy",
     "Pulumi",
     "servicebus",
@@ -184,7 +190,6 @@
   "chat.tools.terminal.autoApprove": {
     "swift": true
   },
-  "workbench.statusBar.visible": false,
   "[dockercompose]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 2,
@@ -193,5 +198,6 @@
   },
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
-  }
+  },
+  "continue.enableNextEdit": false
 }
