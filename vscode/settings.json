@@ -163,7 +163,7 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "workbench.editor.showTabs": "none",
   "[csharp]": {
-    "editor.defaultFormatter": "csharpier.csharpier-vscode"
+    // "editor.defaultFormatter": "csharpier.csharpier-vscode"
   },
   "workbench.navigationControl.enabled": false,
   "chat.commandCenter.enabled": false,
@@ -173,8 +173,10 @@
   "editor.matchBrackets": "never",
   "cSpell.userWords": [
     "aspnet",
+    "azurecli",
     "BCDEV",
     "buildx",
+    "CLIENTID",
     "elkds",
     "elkjop",
     "elkjopnordic",
@@ -182,10 +184,13 @@
     "ITDS",
     "jensbech",
     "justfile",
+    "kubelogin",
     "multideploy",
     "Pulumi",
     "servicebus",
-    "VNET"
+    "traefik",
+    "VNET",
+    "websecure"
   ],
   "chat.tools.terminal.autoApprove": {
     "swift": true
