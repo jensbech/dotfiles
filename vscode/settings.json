@@ -173,22 +173,29 @@
   "editor.matchBrackets": "never",
   "cSpell.userWords": [
     "aspnet",
+    "azurecli",
     "BCDEV",
     "buildx",
+    "CLIENTID",
     "elkds",
     "elkjop",
     "elkjopnordic",
+    "Elreturn",
     "feide",
     "ITDS",
     "jensbech",
     "justfile",
+    "kubelogin",
     "multideploy",
     "Pulumi",
     "servicebus",
-    "VNET"
+    "traefik",
+    "VNET",
+    "websecure"
   ],
   "chat.tools.terminal.autoApprove": {
-    "swift": true
+    "swift": true,
+    "dotnet build": true
   },
   "[dockercompose]": {
     "editor.insertSpaces": true,
