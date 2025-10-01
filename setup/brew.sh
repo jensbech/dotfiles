@@ -11,6 +11,7 @@ cli_apps=(
   typescript
   bat
   borders
+  pnpm
 )
 
 brew install "${cli_apps[@]}"
@@ -31,7 +32,6 @@ gui_apps=(
   bettertouchtool
   logi-options+
   mos
-  pnpm
 )
 brew tap FelixKratz/formulae
 brew install --cask "${gui_apps[@]}"
