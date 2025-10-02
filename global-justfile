@@ -1,11 +1,7 @@
-#!/usr/bin/env -S just --justfile
-
-
 _default:
     just list
 
 list:
-    #!/usr/bin/env bash
     BOLD=$'\033[1m'
     BLUE=$'\033[0;34m'
     GREEN=$'\033[0;32m'
@@ -35,7 +31,6 @@ list:
     printf "  ${GRAY}just run${NC} ${GREEN}pers/toolbox/github${NC} ${CYAN}batch-close-issues${NC} ${YELLOW}'search-term'${NC}\n"
 
 run path command *args:
-    #!/usr/bin/env bash
     RED=$'\033[0;31m'
     GREEN=$'\033[0;32m'
     BLUE=$'\033[0;34m'
@@ -57,10 +52,7 @@ run path command *args:
     printf "${BLUE}🏃 Running:${NC} ${GREEN}just {{command}} {{args}}${NC} ${GRAY}in %s${NC}\n" "$target_dir"
     cd "$target_dir" && just {{command}} {{args}}
 
-# Find justfile containing a specific command
 find-command command:
-    #!/usr/bin/env bash
-    # Colors
     BLUE=$'\033[0;34m'
     GREEN=$'\033[0;32m'
     RED=$'\033[0;31m'
@@ -74,7 +66,6 @@ find-command command:
         rel_path=$(echo "$justfile_path" | sed "s|$HOME/||")
         project_name=$(basename $(dirname "$justfile_path"))
         
-        # Check if command exists in this justfile
         cd "$(dirname "$justfile_path")"
         if just --list --unsorted 2>/dev/null | grep -q "^    {{command}}"; then
             printf "${GREEN}✅ Found in:${NC} %s ${GRAY}(%s)${NC}\n" "$project_name" "$rel_path"
