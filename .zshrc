@@ -63,6 +63,7 @@ alias copy='pbcopy'
 alias j='just'
 alias cat='bat'
 alias f='fzf | xargs -r hx'
+alias knis="k9s"
 
 # List directories only (long format)
 alias ld='eza -lD --group-directories-first --color=always --icons'

@@ -163,7 +163,7 @@
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "workbench.editor.showTabs": "none",
   "[csharp]": {
-    // "editor.defaultFormatter": "csharpier.csharpier-vscode"
+    "editor.defaultFormatter": "csharpier.csharpier-vscode"
   },
   "workbench.navigationControl.enabled": false,
   "chat.commandCenter.enabled": false,
