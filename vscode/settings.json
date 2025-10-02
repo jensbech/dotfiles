@@ -170,11 +170,12 @@
   "window.commandCenter": false,
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.layoutControl.enabled": false,
-  "editor.matchBrackets": false,
+  "editor.matchBrackets": "never",
   "cSpell.userWords": [
     "aspnet",
     "azurecli",
     "BCDEV",
+    "brupdate",
     "buildx",
     "CLIENTID",
     "elkds",
