@@ -1,0 +1,87 @@
+#!/usr/bin/env -S just --justfile
+
+
+_default:
+    just list
+
+list:
+    #!/usr/bin/env bash
+    BOLD=$'\033[1m'
+    BLUE=$'\033[0;34m'
+    GREEN=$'\033[0;32m'
+    YELLOW=$'\033[0;33m'
+    CYAN=$'\033[0;36m'
+    GRAY=$'\033[0;90m'
+    NC=$'\033[0m'
+        
+    find ~/proj/pers -name "justfile" -type f -not -path "*/.*" | while read -r justfile_path; do
+        rel_path=$(echo "$justfile_path" | sed "s|$HOME/||")
+        project_name=$(basename $(dirname "$justfile_path"))
+        
+        printf "${BOLD}${GREEN}📁 %s${NC} ${GRAY}(%s)${NC}:\n" "$project_name" "$rel_path"
+        
+        cd "$(dirname "$justfile_path")" && just --list --unsorted 2>/dev/null | grep -E "^    [a-zA-Z]" | while read -r line; do
+            command_name=$(echo "$line" | sed 's/^    //')
+            printf "  ${CYAN}%s${NC}\n" "$command_name"
+        done || printf "  ${GRAY}(error reading commands)${NC}\n"
+        echo ""
+    done
+    
+    printf "${BOLD}${YELLOW}Usage:${NC}\n"
+    printf "  ${CYAN}just run${NC} <project_path> <command> [args]\n\n"
+    printf "${BOLD}${YELLOW}Examples:${NC}\n"
+    printf "  ${GRAY}just run${NC} ${GREEN}pers/dotfiles${NC} ${CYAN}stow${NC}\n"
+    printf "  ${GRAY}just run${NC} ${GREEN}pers/toolbox${NC} ${CYAN}brew${NC}\n"
+    printf "  ${GRAY}just run${NC} ${GREEN}pers/toolbox/github${NC} ${CYAN}batch-close-issues${NC} ${YELLOW}'search-term'${NC}\n"
+
+run path command *args:
+    #!/usr/bin/env bash
+    RED=$'\033[0;31m'
+    GREEN=$'\033[0;32m'
+    BLUE=$'\033[0;34m'
+    GRAY=$'\033[0;90m'
+    NC=$'\033[0m'
+    
+    target_dir="$HOME/proj/{{path}}"
+    
+    if [ ! -d "$target_dir" ]; then
+        printf "${RED}❌ Directory not found:${NC} %s\n" "$target_dir"
+        exit 1
+    fi
+    
+    if [ ! -f "$target_dir/justfile" ]; then
+        printf "${RED}❌ No justfile found in:${NC} %s\n" "$target_dir"
+        exit 1
+    fi
+    
+    printf "${BLUE}🏃 Running:${NC} ${GREEN}just {{command}} {{args}}${NC} ${GRAY}in %s${NC}\n" "$target_dir"
+    cd "$target_dir" && just {{command}} {{args}}
+
+# Find justfile containing a specific command
+find-command command:
+    #!/usr/bin/env bash
+    # Colors
+    BLUE=$'\033[0;34m'
+    GREEN=$'\033[0;32m'
+    RED=$'\033[0;31m'
+    GRAY=$'\033[0;90m'
+    NC=$'\033[0m'
+    
+    printf "${BLUE}🔍 Searching for command${NC} '${GREEN}{{command}}${NC}' ${BLUE}in all justfiles:${NC}\n\n"
+    
+    found=false
+    find ~/proj/pers -name "justfile" -type f -not -path "*/.*" | while read -r justfile_path; do
+        rel_path=$(echo "$justfile_path" | sed "s|$HOME/||")
+        project_name=$(basename $(dirname "$justfile_path"))
+        
+        # Check if command exists in this justfile
+        cd "$(dirname "$justfile_path")"
+        if just --list --unsorted 2>/dev/null | grep -q "^    {{command}}"; then
+            printf "${GREEN}✅ Found in:${NC} %s ${GRAY}(%s)${NC}\n" "$project_name" "$rel_path"
+            found=true
+        fi
+    done
+    
+    if [ "$found" = false ]; then
+        printf "${RED}❌ Command${NC} '${GREEN}{{command}}${NC}' ${RED}not found in any justfile${NC}\n"
+    fi
