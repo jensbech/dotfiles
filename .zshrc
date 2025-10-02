@@ -47,6 +47,7 @@ alias stash="git stash"
 alias pop="git stash pop"
 alias root='cd $(git rev-parse --show-toplevel)'
 alias dotfiles='cd $HOME/proj/pers/dotfiles'
+alias toolbox='cd $HOME/proj/pers/toolbox'
 alias vault='cd $HOME/proj/pers/vault'
 alias jb='cd $HOME/proj/elk/jensbech-repo'
 alias elk='cd $HOME/proj/elk'
