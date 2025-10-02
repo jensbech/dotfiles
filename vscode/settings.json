@@ -206,5 +206,7 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
-  "continue.enableNextEdit": false
+  "continue.enableNextEdit": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "window.nativeTabs": true
 }
