@@ -19,11 +19,9 @@ restow:
 stow-vscode:
     stow -v -t "{{vscode_path}}" vscode
 
-# Stow the global justfile as a symlink in home directory
 stow-global:
     ln -sf "{{justfile_directory()}}/global-justfile" ~/justfile
 
-# Remove the global justfile symlink
 unstow-global:
     rm -f ~/justfile
 
