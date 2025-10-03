@@ -169,7 +169,7 @@
   "window.commandCenter": false,
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.layoutControl.enabled": false,
-  "editor.matchBrackets": false,
+  "editor.matchBrackets": "never",
   "cSpell.userWords": [
     "aspnet",
     "azurecli",
@@ -195,7 +195,13 @@
   ],
   "chat.tools.terminal.autoApprove": {
     "swift": true,
-    "dotnet build": true
+    "dotnet build": true,
+    "git branch --list": {
+      "approve": true,
+      "matchCommandLine": true
+    },
+    "true": true,
+    "sed": true
   },
   "[dockercompose]": {
     "editor.insertSpaces": true,
