@@ -13,7 +13,8 @@
     "context": "Pane",
     "bindings": {
       "ctrl-tab": "pane::ActivateNextItem",
-      "ctrl-shift-tab": "pane::ActivatePreviousItem"
+      "ctrl-shift-tab": "pane::ActivatePreviousItem",
+      "cmd-p": "file_finder::Toggle"
     }
   },
   {
