@@ -1,7 +1,7 @@
 [
   {
     "context": "Workspace"
-    "bindings": {
+      "bindings": {
       "cmd-p": "file_finder::Toggle"
     }
   },
