@@ -52,50 +52,5 @@
   "indent_guides": {
     "coloring": "indent_aware",
     "active_line_width": 3
-  },
-
-  // Settings related to the file finder.
-  "file_finder": {
-    // Whether to show file icons in the file finder.
-    "file_icons": true,
-    // Determines how much space the file finder can take up in relation to the available window width.
-    // There are 5 possible width values:
-    //
-    // 1. Small: This value is essentially a fixed width.
-    //    "modal_max_width": "small"
-    // 2. Medium:
-    //    "modal_max_width": "medium"
-    // 3. Large:
-    //    "modal_max_width": "large"
-    // 4. Extra Large:
-    //    "modal_max_width": "xlarge"
-    // 5. Fullscreen: This value removes any horizontal padding, as it consumes the whole viewport width.
-    //    "modal_max_width": "full"
-    //
-    // Default: small
-    "modal_max_width": "small",
-    // Determines whether the file finder should skip focus for the active file in search results.
-    // There are 2 possible values:
-    //
-    // 1. true: When searching for files, if the currently active file appears as the first result,
-    //    auto-focus will skip it and focus the second result instead.
-    //    "skip_focus_for_active_in_search": true
-    //
-    // 2. false: When searching for files, the first result will always receive focus,
-    //    even if it's the currently active file.
-    //    "skip_focus_for_active_in_search": false
-    //
-    // Default: true
-    "skip_focus_for_active_in_search": true,
-    // Whether to show the git status in the file finder.
-    "git_status": true,
-    // Whether to use gitignored files when searching.
-    // Only the file Zed had indexed will be used, not necessary all the gitignored files.
-    //
-    // Can accept 3 values:
-    //   * `true`: Use all gitignored files
-    //   * `false`: Use only the files Zed had indexed
-    //   * `null`: Be smart and search for ignored when called from a gitignored worktree
-    "include_ignored": null
   }
 }
