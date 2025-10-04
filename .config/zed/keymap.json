@@ -1,7 +1,9 @@
 [
   {
     "context": "Workspace",
-    "bindings": {}
+    "bindings": {
+      "cmd-r": "workspace::ToggleRightDock"
+    }
   },
   {
     "context": "Editor && vim_mode == insert",
