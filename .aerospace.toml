@@ -101,6 +101,9 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
     if.app-id = "com.microsoft.VSCode"
     run = "move-node-to-workspace Code"
+[[on-window-detected]]
+    if.app-id = "dev.zed.Zed"
+    run = "move-node-to-workspace Code"
 
  # Browser
 [[on-window-detected]]
