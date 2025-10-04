@@ -72,9 +72,9 @@ automatically-unhide-macos-hidden-apps = false
     cmd-ctrl-shift-alt-9 = 'move-node-to-workspace Music'
     cmd-ctrl-shift-alt-0 = 'move-node-to-workspace 0'
 
-    alt-tab = 'workspace-back-and-forth'
+    # alt-tab = 'workspace-back-and-forth'
     alt-shift-tab = 'move-workspace-to-monitor --wrap-around next'
-    
+
     alt-shift-semicolon = 'mode service'
     cmd-ctrl-shift-alt-f = "layout floating tiling"
 
@@ -95,7 +95,7 @@ automatically-unhide-macos-hidden-apps = false
 
 [workspace-to-monitor-force-assignment]
     Brave = 'built-in'
-    Music = 'built-in'           
+    Music = 'built-in'
 
 # Code
 [[on-window-detected]]
@@ -174,4 +174,3 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
     if.app-id = "com.brave.Browser"
     run = "move-node-to-workspace Brave"
-  
