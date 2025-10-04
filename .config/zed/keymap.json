@@ -20,7 +20,9 @@
     "context": "Editor",
     "bindings": {
       "cmd-ø": "editor::ToggleComments",
-      "cmd-c": "workspace::ToggleRightDock"
+      "cmd-c": "workspace::ToggleRightDock",
+
+      "cmd-p": "file_finder::Toggle"
     }
   }
 ]
