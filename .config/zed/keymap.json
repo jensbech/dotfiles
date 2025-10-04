@@ -6,7 +6,8 @@
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      "cmd-c": "workspace::ToggleRightDock"
+      "cmd-c": "workspace::ToggleRightDock",
+      "cmd-p": "file_finder::Toggle"
     }
   },
   {
