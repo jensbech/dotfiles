@@ -1,7 +1,7 @@
 [
   {
-    "context": "Workspace",
-    "bindings": {}
+    "context": "Workspace"
+    // "bindings": {}
   },
   {
     "context": "Editor && vim_mode == insert",
