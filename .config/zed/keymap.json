@@ -2,14 +2,12 @@
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-c": "workspace::ToggleRightDock"
     }
   },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      "cmd-shift-c": "workspace::ToggleRightDock",
-      "cmd-c": "workspace::ToggleRightDock"
+      "cmd-shift-c": "workspace::ToggleRightDock"
     }
   },
   {
@@ -22,7 +20,8 @@
   {
     "context": "Editor",
     "bindings": {
-      "cmd-ø": "editor::ToggleComments"
+      "cmd-ø": "editor::ToggleComments",
     }
+      "cmd-c": "workspace::ToggleRightDock"
   }
 ]
