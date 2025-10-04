@@ -5,7 +5,9 @@
   },
   {
     "context": "Editor && vim_mode == insert",
-    "bindings": {}
+    "bindings": {
+      "cmd-shift-c": "workspace::ToggleRightDock"
+    }
   },
   {
     "context": "Pane",
