@@ -21,7 +21,6 @@
     "context": "Editor",
     "bindings": {
       "cmd-ø": "editor::ToggleComments",
-    }
       "cmd-c": "workspace::ToggleRightDock"
   }
 ]
