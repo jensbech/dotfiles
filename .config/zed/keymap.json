@@ -2,7 +2,7 @@
   {
     "context": "Workspace",
     "bindings": {
-      "cmd-r": "workspace::ToggleRightDock"
+      "cmd-c": "workspace::ToggleRightDock"
     }
   },
   {
