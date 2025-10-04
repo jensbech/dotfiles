@@ -1,6 +1,6 @@
 [
   {
-    "context": "Workspace" {
+    "context": "Workspace",
     "bindings": {
             "cmd-p": "file_finder::Toggle"
     },
