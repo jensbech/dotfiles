@@ -73,7 +73,7 @@
     //    "modal_max_width": "full"
     //
     // Default: small
-    "modal_max_width": "large",
+    "modal_max_width": "small",
     // Determines whether the file finder should skip focus for the active file in search results.
     // There are 2 possible values:
     //
