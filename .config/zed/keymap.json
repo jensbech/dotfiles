@@ -8,7 +8,7 @@
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      "cmd-shift-c": "workspace::ToggleRightDock"
+      "cmd-shift-c": "workspace::ToggleRightDock",
       "cmd-c": "workspace::ToggleRightDock"
     }
   },
