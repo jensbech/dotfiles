@@ -1,7 +1,9 @@
 [
   {
     "context": "Workspace"
-    // "bindings": {}
+    "bindings": {
+      "cmd-p": "file_finder::Toggle"
+    }
   },
   {
     "context": "Editor && vim_mode == insert",
