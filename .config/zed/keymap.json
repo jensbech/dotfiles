@@ -1,31 +1,26 @@
 [
   {
     "context": "Workspace",
-    "bindings": {
-      "cmd-p": "file_finder::Toggle"
-    }
+    "bindings": {}
   },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
-      "cmd-c": "workspace::ToggleRightDock",
-      "cmd-p": "file_finder::Toggle"
+      "cmd-c": "workspace::ToggleRightDock"
     }
   },
   {
     "context": "Pane",
     "bindings": {
       "ctrl-tab": "pane::ActivateNextItem",
-      "ctrl-shift-tab": "pane::ActivatePreviousItem",
-      "cmd-p": "file_finder::Toggle"
+      "ctrl-shift-tab": "pane::ActivatePreviousItem"
     }
   },
   {
     "context": "Editor",
     "bindings": {
       "cmd-ø": "editor::ToggleComments",
-      "cmd-c": "workspace::ToggleRightDock",
-      "cmd-p": "file_finder::Toggle"
+      "cmd-c": "workspace::ToggleRightDock"
     }
   }
 ]
