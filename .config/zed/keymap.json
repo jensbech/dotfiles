@@ -1,8 +1,7 @@
 [
   {
     "context": "Workspace",
-    "bindings": {
-    }
+    "bindings": {}
   },
   {
     "context": "Editor && vim_mode == insert",
@@ -22,5 +21,6 @@
     "bindings": {
       "cmd-ø": "editor::ToggleComments",
       "cmd-c": "workspace::ToggleRightDock"
+    }
   }
 ]
