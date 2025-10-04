@@ -7,7 +7,6 @@
     "context": "Editor && vim_mode == insert",
     "bindings": {
       "cmd-shift-c": "workspace::ToggleRightDock"
-      // "j k": "vim::NormalBefore"
     }
   },
   {
