@@ -1,8 +1,8 @@
 [
   {
-    "context": "Workspace"
-      "bindings": {
-      "cmd-p": "file_finder::Toggle"
+    "context": "Workspace": {
+    "bindings": {
+            "cmd-p": "file_finder::Toggle"
     }
   },
   {
