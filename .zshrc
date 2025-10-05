@@ -66,7 +66,7 @@ alias j='just'
 alias cat='bat'
 alias f='fzf | xargs -r hx'
 alias knis="k9s"
-alias z ="zed"
+alias z="zed"
 
 alias ld='eza -lD --group-directories-first --color=always --icons'
 alias lf='eza -lF --color=always --group-directories-first --icons | grep -v "/$"'
