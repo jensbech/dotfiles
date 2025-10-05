@@ -4,7 +4,7 @@ _default:
 
 # Dynamic project command routing - allows 'just <project> <command>' instead of 'just run pers/<project> <command>'
 [no-exit-message]
-@*args:
+project *args='':
     #!/usr/bin/env bash
     RED=$'\033[0;31m'
     GREEN=$'\033[0;32m'
@@ -12,13 +12,16 @@ _default:
     GRAY=$'\033[0;90m'
     NC=$'\033[0m'
 
-    if [ $# -eq 0 ]; then
-        just list
-        exit 0
+    args_array=({{args}})
+
+    if [ ${#args_array[@]} -eq 0 ]; then
+        printf "${RED}❌ Usage:${NC} just project <project_name> [command] [args]\n"
+        printf "${GRAY}Available projects under ~/proj/pers/:${NC}\n"
+        find ~/proj/pers -maxdepth 1 -type d -not -path "*/.*" | sed 's|.*/||' | sort | sed 's/^/  /'
+        exit 1
     fi
 
-    project_name="$1"
-    shift
+    project_name="${args_array[0]}"
 
     # Check if the project directory exists
     target_dir="$HOME/proj/pers/$project_name"
@@ -35,17 +38,17 @@ _default:
         exit 1
     fi
 
-    if [ $# -eq 0 ]; then
+    if [ ${#args_array[@]} -eq 1 ]; then
         printf "${BLUE}📋 Available commands in${NC} ${GREEN}%s${NC}:\n" "$project_name"
         cd "$target_dir" && just --list --unsorted
         exit 0
     fi
 
-    command="$1"
-    shift
+    command="${args_array[1]}"
+    remaining_args="${args_array[@]:2}"
 
-    printf "${BLUE}🏃 Running:${NC} ${GREEN}just %s %s${NC} ${GRAY}in %s${NC}\n" "$command" "$*" "$target_dir"
-    cd "$target_dir" && just "$command" "$@"
+    printf "${BLUE}🏃 Running:${NC} ${GREEN}just %s %s${NC} ${GRAY}in %s${NC}\n" "$command" "$remaining_args" "$target_dir"
+    cd "$target_dir" && just "$command" ${remaining_args}
 
 list:
     #!/usr/bin/env bash
@@ -79,11 +82,11 @@ list:
     done
 
     printf "${BOLD}${YELLOW}Usage:${NC}\n"
-    printf "  ${CYAN}just${NC} <project> <command> [args]  ${GRAY}# Direct project access${NC}\n"
+    printf "  ${CYAN}just project${NC} <project> [command] [args]  ${GRAY}# Direct project access${NC}\n"
     printf "  ${CYAN}just run${NC} <project_path> <command> [args]  ${GRAY}# Full path access${NC}\n\n"
     printf "${BOLD}${YELLOW}Examples:${NC}\n"
-    printf "  ${GRAY}just${NC} ${GREEN}dotfiles${NC} ${CYAN}stow${NC}  ${GRAY}# Shorthand${NC}\n"
-    printf "  ${GRAY}just${NC} ${GREEN}toolbox${NC} ${CYAN}sleep-enable${NC}  ${GRAY}# Shorthand${NC}\n"
+    printf "  ${GRAY}just project${NC} ${GREEN}dotfiles${NC} ${CYAN}stow${NC}  ${GRAY}# Shorthand${NC}\n"
+    printf "  ${GRAY}just project${NC} ${GREEN}toolbox${NC} ${CYAN}sleep-enable${NC}  ${GRAY}# Shorthand${NC}\n"
     printf "  ${GRAY}just run${NC} ${GREEN}pers/toolbox/github${NC} ${CYAN}batch-close-issues${NC} ${YELLOW}'search-term'${NC}  ${GRAY}# Full path${NC}\n"
 
 run path command *args:
