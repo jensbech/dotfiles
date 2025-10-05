@@ -56,7 +56,8 @@
   "lsp": {
     "omnisharp": {
       "binary": {
-        "path": "/Users/jens/csharp-language-server"
+        "path": "/Users/jens/csharp-language-server",
+        "arguments": []
       }
     }
   }
