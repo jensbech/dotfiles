@@ -2,6 +2,11 @@
 _default:
     just list
 
+pull:
+    cd ~/proj/pers/dotfiles && git pull
+    cd ~/proj/pers/notes && git pull
+    cd ~/proj/pers/toolbox && git pull
+
 # Shorthand project proxy recipes (auto-run inside matching project)
 # Usage examples:
 #   just dotfiles stow
