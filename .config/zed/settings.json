@@ -57,7 +57,7 @@
   "project_panel": {
     "indent_size": 30,
     "indent_guides": {
-      "show": "never"
+      "show": "always"
     }
   }
 }
