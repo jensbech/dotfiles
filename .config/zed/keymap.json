@@ -42,7 +42,7 @@
     }
   },
   {
-    "context": "(VimControl && !menu)",
+    "context": "editor",
     "bindings": {
       "ctrl-i": null
     }
