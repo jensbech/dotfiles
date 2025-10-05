@@ -36,7 +36,7 @@
     }
   },
   {
-    "context": "(VimControl && !menu)",
+    "context": "editor",
     "bindings": {
       "cmd-d": "pane::GoForward"
     }
