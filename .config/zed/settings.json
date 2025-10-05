@@ -56,5 +56,6 @@
   },
   "project_panel": {
     "indent_size": 30
-  }
+  },
+  "tab_size": 4
 }
