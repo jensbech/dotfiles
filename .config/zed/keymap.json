@@ -26,12 +26,6 @@
   {
     "context": "(VimControl && !menu)",
     "bindings": {
-      "cmd-i": "pane::GoBack"
-    }
-  },
-  {
-    "context": "(VimControl && !menu)",
-    "bindings": {
       "ctrl-o": null
     }
   },
