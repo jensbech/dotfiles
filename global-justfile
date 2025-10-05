@@ -3,9 +3,15 @@ _default:
     just list
 
 pull:
-    cd ~/proj/pers/dotfiles && git pull
-    cd ~/proj/pers/notes && git pull
-    cd ~/proj/pers/toolbox && git pull
+    #!/usr/bin/env bash
+    set -euo pipefail
+
+    (cd ~/proj/pers/dotfiles && echo "[dotfiles] Starting..." && git pull 2>&1 | sed 's/^/[dotfiles] /') &
+    (cd ~/proj/pers/notes && echo "[notes] Starting..." && git pull 2>&1 | sed 's/^/[notes] /') &
+    (cd ~/proj/pers/toolbox && echo "[toolbox] Starting..." && git pull 2>&1 | sed 's/^/[toolbox] /') &
+
+    wait
+    echo "All pulls completed!"
 
 # Shorthand project proxy recipes (auto-run inside matching project)
 # Usage examples:
