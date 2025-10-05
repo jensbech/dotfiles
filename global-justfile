@@ -124,13 +124,6 @@ list:
     echo ""
     done
 
-    printf "${BOLD}${YELLOW}Usage:${NC}\n"
-    printf "  ${CYAN}just run${NC} <project_path> <command> [args]\n\n"
-    printf "${BOLD}${YELLOW}Examples:${NC}\n"
-    printf "  ${GRAY}just run${NC} ${GREEN}pers/dotfiles${NC} ${CYAN}stow${NC}\n"
-    printf "  ${GRAY}just run${NC} ${GREEN}pers/toolbox${NC} ${CYAN}sleep-enable${NC}\n"
-    printf "  ${GRAY}just run${NC} ${GREEN}pers/toolbox/github${NC} ${CYAN}batch-close-issues${NC} ${YELLOW}'search-term'${NC}\n"
-
 run path command *args:
     #!/usr/bin/env bash
     RED=$'\033[0;31m'
