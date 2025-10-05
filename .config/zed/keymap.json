@@ -44,7 +44,7 @@
   {
     "context": "editor",
     "bindings": {
-      "ctrl-i": null
+      "ctrl-i": "pane::GoBack"
     }
   }
 ]
