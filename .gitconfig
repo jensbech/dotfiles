@@ -10,3 +10,5 @@
 [core]
 	autocrlf = false
 	hooksPath = ~/.git-hooks
+[pull]
+	rebase = false
