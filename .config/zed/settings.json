@@ -20,7 +20,8 @@
   },
   "base_keymap": "VSCode",
   "tab_bar": {
-    "show_nav_history_buttons": false
+    "show_nav_history_buttons": false,
+    "show_tab_bar_buttons": false
   },
   "minimap": {
     "show": "always"
