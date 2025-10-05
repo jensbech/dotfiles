@@ -36,9 +36,9 @@
     }
   },
   {
-    "context": "editor",
+    "context": "(VimControl && !menu)",
     "bindings": {
-      "cmd-i": "(VimControl && !menu)"
+      "cmd-i": "pane::GoBack"
     }
   }
 ]
