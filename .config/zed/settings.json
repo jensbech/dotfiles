@@ -19,7 +19,9 @@
     "font_size": 9.0
   },
   "base_keymap": "VSCode",
-  "tab_bar": {},
+  "tab_bar": {
+    "show_nav_history_buttons": false
+  },
   "minimap": {
     "show": "always"
   },
