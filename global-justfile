@@ -13,14 +13,6 @@ pull:
     wait
     echo "All pulls completed!"
 
-# Shorthand project proxy recipes (auto-run inside matching project)
-# Usage examples:
-#   just dotfiles stow
-#   just toolbox sleep-enable
-#   just github batch-close-issues "search-term"
-#   just dotfiles            (lists commands for dotfiles)
-# Each recipe supports an optional command plus arbitrary args.
-
 dotfiles command='' *args:
     #!/usr/bin/env bash
     set -euo pipefail
@@ -86,22 +78,6 @@ git-auto-sync command='' *args:
         exit 0
     fi
     cd "$target_dir" && just {{command}} {{args}}
-
-
-# NOTE:
-# Previous attempt at dynamic routing ('just <project> <command>') was removed because
-# just does not support a true catch-all recipe that can safely intercept arbitrary
-# top-level invocations without introducing invalid syntax or ambiguity.
-#
-# Recommended approaches for shorthand:
-# 1. Shell function (add to your shell rc):
-#      jp() { just run "pers/$1" "${@:2}"; }
-#      # Usage: jp toolbox sleep-enable
-#
-# 2. Or alias for a single project (example):
-#      alias jtb='just run pers/toolbox'
-#
-# Continue using the explicit 'run' recipe below.
 
 list:
     #!/usr/bin/env bash
