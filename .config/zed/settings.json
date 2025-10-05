@@ -6,6 +6,14 @@
     "edit_prediction_provider": "copilot"
   },
   "agent": {
+    "profiles": {
+      "agent": {
+        "name": "Agent",
+        "tools": {},
+        "enable_all_context_servers": false,
+        "context_servers": {}
+      }
+    },
     "default_profile": "ask",
     "default_model": {
       "provider": "copilot_chat",
