@@ -55,9 +55,6 @@
     "active_line_width": 3
   },
   "project_panel": {
-    "indent_size": 30,
-    "indent_guides": {
-      "show": "always"
-    }
+    "indent_size": 30
   }
 }
