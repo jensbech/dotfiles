@@ -38,7 +38,7 @@
   {
     "context": "editor",
     "bindings": {
-      "cmd-i": "pane::GoBack"
+      "cmd-i": "(VimControl && !menu)"
     }
   }
 ]
