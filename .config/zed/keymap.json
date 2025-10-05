@@ -26,7 +26,7 @@
   {
     "context": "(VimControl && !menu)",
     "bindings": {
-      "alt-cmd-7": "pane::GoBack"
+      "cmd-i": "pane::GoBack"
     }
   }
 ]
