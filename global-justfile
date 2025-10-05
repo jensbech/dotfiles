@@ -126,8 +126,6 @@ list:
 
     printf "${BOLD}${YELLOW}Usage:${NC}\n"
     printf "  ${CYAN}just run${NC} <project_path> <command> [args]\n\n"
-    printf "${BOLD}${YELLOW}Suggested shell helper (add to ~/.zshrc or ~/.bashrc):${NC}\n"
-    printf "  ${GRAY}jp() { just run \"pers/\\$1\" \"\\${@:2}\"; }${NC}\n\n"
     printf "${BOLD}${YELLOW}Examples:${NC}\n"
     printf "  ${GRAY}just run${NC} ${GREEN}pers/dotfiles${NC} ${CYAN}stow${NC}\n"
     printf "  ${GRAY}just run${NC} ${GREEN}pers/toolbox${NC} ${CYAN}sleep-enable${NC}\n"
