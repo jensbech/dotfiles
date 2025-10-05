@@ -37,7 +37,7 @@
     "diagnostics": false,
     "metrics": false
   },
-  "ui_font_size": 19,
+  "ui_font_size": 16,
   "buffer_font_size": 14.0,
   "theme": {
     "mode": "system",
@@ -53,12 +53,4 @@
     "coloring": "indent_aware",
     "active_line_width": 3
   }
-  // "lsp": {
-  //   "omnisharp": {
-  //     "binary": {
-  //       "path": "/Users/jens/csharp-language-server",
-  //       "arguments": []
-  //     }
-  //   }
-  // }
 }
