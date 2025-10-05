@@ -22,5 +22,11 @@
       "cmd-ø": "editor::ToggleComments",
       "cmd-c": "workspace::ToggleRightDock"
     }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "alt-cmd-7": "pane::GoBack"
+    }
   }
 ]
