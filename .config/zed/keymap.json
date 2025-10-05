@@ -40,5 +40,11 @@
     "bindings": {
       "cmd-d": "pane::GoForward"
     }
+  },
+  {
+    "context": "(VimControl && !menu)",
+    "bindings": {
+      "ctrl-i": null
+    }
   }
 ]
