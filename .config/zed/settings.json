@@ -34,7 +34,7 @@
   "minimap": {
     "show": "always"
   },
-  "buffer_font_family": "PT Sans",
+  "buffer_font_family": "FiraCode Nerd Font Mono",
   "buffer_font_weight": 500,
   "cursor_blink": false,
   "use_system_window_tabs": true,
