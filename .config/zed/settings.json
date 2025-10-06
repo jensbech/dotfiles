@@ -22,7 +22,7 @@
     "model_parameters": []
   },
   "helix_mode": true,
-  "icon_theme": "Zed (Default)",
+  "icon_theme": "VSCode Great Icons Theme",
   "terminal": {
     "font_size": 9.0
   },
