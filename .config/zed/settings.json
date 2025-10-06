@@ -54,7 +54,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "GitHub Copilot Theme - Dark"
+    "dark": "VSCode Dark Polished"
   },
   "git": {
     "inline_blame": {
