@@ -14,7 +14,7 @@
         "context_servers": {}
       }
     },
-    "default_profile": "write",
+    "default_profile": "ask",
     "default_model": {
       "provider": "copilot_chat",
       "model": "claude-sonnet-4"
