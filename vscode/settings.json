@@ -1,7 +1,7 @@
 {
   "redhat.telemetry.enabled": false,
   // Editor
-  "editor.fontFamily": "Jetbrains Mono",
+  "editor.fontFamily": "s",
   // Make
   "makefile.configureOnOpen": true,
   "git.confirmSync": false,
