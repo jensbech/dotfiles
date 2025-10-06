@@ -48,7 +48,6 @@
     "metrics": false
   },
   "ui_font_size": 19,
-  "ui_font_family": "JetBrains Mono",
   "buffer_font_size": 14.0,
   "theme": {
     "mode": "system",
