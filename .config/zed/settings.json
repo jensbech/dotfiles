@@ -37,7 +37,9 @@
   },
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_weight": 500,
-  "buffer_line_height": { "custom": 1.4 },
+
+  "buffer_line_height": "comfortable",
+  // "buffer_line_height": { "custom": 1.4 },
   "cursor_blink": false,
   "use_system_window_tabs": true,
   "active_pane_modifiers": {
