@@ -38,8 +38,7 @@
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_weight": 500,
 
-  "buffer_line_height": "standard",
-  // "buffer_line_height": { "custom": 1.3 },
+  "buffer_line_height": { "custom": 1.3 },
   "cursor_blink": false,
   "use_system_window_tabs": true,
   "active_pane_modifiers": {
