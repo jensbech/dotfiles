@@ -51,7 +51,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "ComfyDark Zed"
+    "dark": "VSCode Dark Polished"
   },
   "git": {
     "inline_blame": {
