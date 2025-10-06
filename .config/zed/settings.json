@@ -22,7 +22,7 @@
     "model_parameters": []
   },
   "helix_mode": true,
-  "icon_theme": "VSCode Icons (Dark)",
+  "icon_theme": "Material Icon Theme",
   "terminal": {
     "font_size": 9.0
   },
