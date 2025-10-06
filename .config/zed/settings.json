@@ -33,7 +33,7 @@
     "show_tab_bar_buttons": false
   },
   "minimap": {
-    "show": "always"
+    "show": "never"
   },
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_weight": 500,
