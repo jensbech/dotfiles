@@ -214,5 +214,5 @@
   "continue.enableNextEdit": false,
   "workbench.editor.highlightModifiedTabs": true,
   "window.nativeTabs": true,
-  "workbench.colorTheme": "Default Dark+"
+  "workbench.colorTheme": "Visual Studio 2019 Light"
 }
