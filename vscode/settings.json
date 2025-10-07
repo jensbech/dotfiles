@@ -67,7 +67,6 @@
   },
   "vscode_vibrancy.opacity": -0.2,
   "window.titleBarStyle": "custom",
-  "workbench.colorTheme": "ComfyDark",
   "workbench.preferredDarkColorTheme": "Default Dark+",
   "accessibility.dimUnfocused.enabled": true,
   "accessibility.dimUnfocused.opacity": 1,
