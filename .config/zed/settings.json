@@ -37,7 +37,7 @@
     "show": "never"
   },
   "buffer_font_family": "JetBrains Mono",
-  "buffer_font_weight": 900,
+  "buffer_font_weight": 700,
   "format_on_save": "off",
   "buffer_line_height": { "custom": 1.25 },
   "cursor_blink": false,
