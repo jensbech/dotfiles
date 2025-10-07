@@ -213,5 +213,6 @@
   },
   "continue.enableNextEdit": false,
   "workbench.editor.highlightModifiedTabs": true,
-  "window.nativeTabs": true
+  "window.nativeTabs": true,
+  "workbench.colorTheme": "Default Dark+"
 }
