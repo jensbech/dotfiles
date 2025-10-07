@@ -55,7 +55,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "VScode Dark Plus"
+    "dark": "VSCode Dark Modern"
   },
   "git": {
     "inline_blame": {
