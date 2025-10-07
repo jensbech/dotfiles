@@ -39,7 +39,7 @@
   "buffer_font_family": "JetBrains Mono",
   "buffer_font_weight": 400,
   "format_on_save": "off",
-  "buffer_line_height": { "custom": 1.27 },
+  "buffer_line_height": { "custom": 1.29 },
   "cursor_blink": false,
   "use_system_window_tabs": true,
   "active_pane_modifiers": {
