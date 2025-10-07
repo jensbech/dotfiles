@@ -372,6 +372,39 @@
             "color": "#689ce0FF",
             "font_weight": 700
           },
+          "namespace": {
+            "color": "#72b86aFF"
+          },
+          "keyword.import": {
+            "color": "#72b86aFF"
+          },
+          "keyword.import.alias": {
+            "color": "#72b86aFF"
+          },
+          "type.builtin": {
+            "color": "#72b86aFF"
+          },
+          "function.method": {
+            "color": "#e1d790FF"
+          },
+          "method": {
+            "color": "#e1d790FF"
+          },
+          "function.call": {
+            "color": "#e1d790FF"
+          },
+          "variable.parameter": {
+            "color": "#55a6e6FF"
+          },
+          "parameter": {
+            "color": "#55a6e6FF"
+          },
+          "variable.member": {
+            "color": "#55a6e6FF"
+          },
+          "variable.field": {
+            "color": "#55a6e6FF"
+          },
           "preproc": {
             "color": "#55a6e6FF"
           }
