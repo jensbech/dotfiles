@@ -214,5 +214,5 @@
   "continue.enableNextEdit": false,
   "workbench.editor.highlightModifiedTabs": true,
   "window.nativeTabs": true,
-  "workbench.colorTheme": "One Dark Modern Classic"
+  "workbench.colorTheme": "ComfyDark"
 }
