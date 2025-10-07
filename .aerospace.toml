@@ -32,7 +32,6 @@ automatically-unhide-macos-hidden-apps = false
     cmd-h = [] # Disable "hide application"
     cmd-alt-h = [] # Disable "hide others"
 
-    alt-z = 'exec-and-forget osascript -e "display notification \"Alt-Z hit\" with title \"Aerospace\""'
     cmd-period = 'layout tiles horizontal vertical'
     # cmd-comma = 'layout accordion horizontal vertical'
 
