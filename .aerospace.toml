@@ -171,7 +171,7 @@ automatically-unhide-macos-hidden-apps = false
 [[on-window-detected]]
     if.app-id = "md.obsidian"
     run = "move-node-to-workspace Markdown"
-[on-window-detected]]
+[[on-window-detected]]
     if.app-id = "dev.zed.Zed"
     run = "move-node-to-workspace Markdown"
 
