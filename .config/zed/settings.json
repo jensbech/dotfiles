@@ -22,7 +22,6 @@
     },
     "model_parameters": []
   },
-  // "helix_mode": true,
   "vim_mode": true,
   "icon_theme": "Material Icon Theme",
   "terminal": {
