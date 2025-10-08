@@ -100,7 +100,7 @@ automatically-unhide-macos-hidden-apps = false
     if.app-id = "com.microsoft.VSCode"
     run = "move-node-to-workspace Code"
 [[on-window-detected]]
-    if.app-id = "com.microsoft.VSCode"
+    if.app-id = "com.jetbrains.rider"
     run = "move-node-to-workspace Code"
 
 
