@@ -32,6 +32,8 @@ toolbox command='' *args:
         (cd "$target_dir" && just --list --unsorted)
         exit 0
     fi
+    # Capture the current directory before cd
+    export INVOCATION_DIR="$PWD"
     cd "$target_dir" && just {{command}} {{args}}
 
 github command='' *args:
