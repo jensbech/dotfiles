@@ -68,7 +68,7 @@ alias f='fzf | xargs -r hx'
 alias knis="k9s"
 alias z="zed"
 
-alias ghw='~/proj/pers/toolbox/github/run-workflow.sh'
+alias run-workflow='~/proj/pers/toolbox/github/run-workflow.sh'
 
 alias ld='eza -lD --group-directories-first --color=always --icons'
 alias lf='eza -lF --color=always --group-directories-first --icons | grep -v "/$"'
