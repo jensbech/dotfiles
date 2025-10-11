@@ -17,8 +17,8 @@
     },
     "default_profile": "write",
     "default_model": {
-      "provider": "copilot_chat",
-      "model": "claude-sonnet-4"
+      "provider": "zed.dev",
+      "model": "gpt-5"
     },
     "model_parameters": []
   },
